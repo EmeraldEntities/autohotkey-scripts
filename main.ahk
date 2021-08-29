@@ -44,6 +44,17 @@ StrRepeat(string, times) {
     SendInput, % ig_url
     Return
 
+:*:g@::
+:*:lg@::
+    SendInput, % github_url
+    Return
+
+; avoiding that dumb # being recognized as a special symbol
+:*:d@::
+:*:ld@::
+    SendRaw, % discord_handle
+    Return
+
 ; shift+caps lock, always on top
 +CapsLock:: WinSet, AlwaysOnTop, Toggle, A
 
@@ -68,5 +79,7 @@ StrRepeat(string, times) {
 +NumpadAdd:: Send {Volume_Up}
 +NumpadSub:: Send {Volume_Down}
 
+; pause - ctrl+esc (sorta useless for now, TODO: fix)
+; exit - shift+esc
 ^Esc:: Pause
 +Esc:: ExitApp
