@@ -68,6 +68,11 @@ StrRepeat(string, times) {
     Run, https://www.google.com/search?q=%clipboard%
     Return
 
+; open messenger using ctrl+alt+m
+^!m::
+    Run, https://www.messenger.com/
+    Return
+
 ; google translate whatever i highlight + ctrl+alt+t
 ^!t::
     Send, ^c
