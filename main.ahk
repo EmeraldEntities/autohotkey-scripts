@@ -13,8 +13,8 @@ StrRepeat(string, times) {
 ; hotstrings to replace abbreviations with text
 :C:WU::whats up
 :C:LY::love you
-:C:Y::yes
-:C:N::no
+; :C:Y::yes
+; :C:N::no
 
 ; complicated hotstrings
 :C:IC::
