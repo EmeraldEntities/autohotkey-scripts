@@ -56,7 +56,8 @@ StrRepeat(string, times) {
     Return
 
 ; shift+caps lock, always on top
-+CapsLock:: WinSet, AlwaysOnTop, Toggle, A
+; +CapsLock:: WinSet, AlwaysOnTop, Toggle, A
+; was annoying to use
 
 ; ctrl+delete empty recycle bin
 ^Del:: FileRecycleEmpty
@@ -68,8 +69,8 @@ StrRepeat(string, times) {
     Run, https://www.google.com/search?q=%clipboard%
     Return
 
-; open messenger using ctrl+alt+m
-^!m::
+; open messenger using ctrl+alt+shift+m
+^!+m::
     Run, https://www.messenger.com/
     Return
 
